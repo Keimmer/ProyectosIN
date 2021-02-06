@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos_In - Todos Nuestros Productos</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/nuevologo.png" alt="logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Acerca de Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Cuenta</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+        
+    </div>
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>Todos Los Videos</h2>
+            <p> </p>
+            <!-- <select name="" id="">
+                <option value="">orden por defecto</option>
+                <option value="">ordenar por precio</option>
+                <option value="">ordenar por relevancia</option>
+                <option value="">ordenar por calificacion</option>
+            </select> -->
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <video width="400" controls>
+                    <source src="videos/anuncio.mp4">
+                </video>
+            </div>
+            <div class="col-2">
+                <video width="210" controls>
+                    <source src="videos/cocina.mp4">
+                </video>
+            </div>
+        </div>
+        <!-- span en caso de que haya mas productos -->
+        <!-- <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div> -->        
+    </div>
+    <!----------footer-------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> </h3>
+                    <p>  </p>
+                    <!-- <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                    </div> -->
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/nuevologo.png" alt="logo">
+                    <p class="footer-text">Fabricamos productos de calidad al mejor precio</p>
+                </div>
+                <div class="footer-col-3">
+                    <!-- <h3>Links</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Blog</li>
+                        <li>Politica de devoluciones</li>
+                        <li>Afiliarse</li>
+                    </ul> -->
+                </div>
+                <div class="footer-col-3">
+                    <h3>Siguenos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright - ProyectosIn 2020</p>
+        </div>
+    </div>
+
+    <!----------js toggle menu----------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

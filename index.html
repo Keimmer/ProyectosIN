@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -10,24 +11,26 @@
     <title>Proyectos_In - Inicio</title>
 </head>
 <body>
+    
 
 
 <div class="header">
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="logo" width="125px">
+                <img src="images/nuevologo.png" alt="logo">
             </div>
             <nav>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Acerca de Nosotros</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Cuenta</a></li>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <!-- <li><a href="">Cuenta</a></li> -->
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -35,7 +38,7 @@
                 <p>En Proyectos IN fabricamos productos de calidad y al mejor precio 
                     <br>consigue todos nuestros productos en nuestra nueva tienda online
                 </p>
-                <a href="" class="btn">Explorar Ahora &#8594;</a>
+                <a href="Productos.html" class="btn">Explorar Ahora &#8594;</a>
             </div>
             <div class="col-2">
                 <img src="images/ImagenPrincipal.png" alt="">
@@ -55,7 +58,7 @@
                     <img src="images/cocinaGris.png">
                 </div>
                 <div class="col-3">
-                    <img src="images/peinadora1.png">
+                    <img src="images/peinadora.png">
                 </div>
             </div>
         </div>
@@ -64,7 +67,7 @@
 
     <!--------------featured products------------------->
     <div class="small-container">
-        <h2 class="title">Productos Destacados</h2>
+        <!-- <h2 class="title">Productos Destacados</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/cocinaGris2.jpg">
@@ -114,7 +117,270 @@
                 </div>
                 <p>$100000.00</p>
             </div>
+        </div> -->
+        <h2 class="title">Ultimos Productos</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="Productos/detallesProducto1.html"><img src="images/cocinaGrissinlavadora.png"></a>
+                <h4>Cocina Gris</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p id="prod1">$115000.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productos/detallesProducto2.html"><img src="images/cocinaRosadasinLavadora.png"></a>
+                <h4>Cocina Rosada</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p id="prod2">$100000.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productos/detallesProducto3.html"><img src="images/lavadora.png"></a>
+                <h4>Lavadora</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p id="prod3">$45000.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Productos/detallesProducto4.html"><img src="images/neveraCerrada.png"></a>
+                <h4>Refrigerador de Madera</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p id="prod4">$45000.00</p>
+            </div>
+        </div>
+        <div class="row">
+           <!--  <div class="col-4">
+                <img src="images/peinadora2.png">
+                <h4>Peinadora</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45000.00</p>
+            </div>  -->           
+           <!--  <div class="col-4">
+                <img src="images/peinadora1.jpg">
+                <h4>Cocina Rosada</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100000.00</p>
+            </div> -->
+            <!-- <div class="col-4">
+                <img src="images/cocinaFuncional.jpg">
+                <h4>Cocina Funcional</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100000.00</p>
+            </div> -->
+            <!-- <div class="col-4">
+                <img src="images/peinadora.jpg">
+                <h4>Cocina Gris</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$100000.00</p>
+            </div> -->
         </div>
     </div>
+
+    <!--------------Offer------------------->
+    <!-- <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/ImagenPrincipal.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Productos Exclusivos de ProyectosIN</p>
+                    <h1>Cocina De Madera Para Niños y Niñas</h1>
+                    <small>Muebles fabricados con madera de alta calidad y productos de primera</small>
+                    <a href="Productos.html" class="btn">Comprar Ahora &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-----------Testimonios------------>
+
+    <!--<div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled it to make a 
+                          type specimen book.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/profile.jpg" alt="">
+                    <h3>Rick c-137</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled it to make a 
+                          type specimen book.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/profile1.jpg" alt="">
+                    <h3>Cool Rick</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of type and scrambled it to make a 
+                          type specimen book.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/profile2.jpg" alt="">
+                    <h3>Simple Rick</h3>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--------------Brands-------------->
+    <!-- <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!----------footer-------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> </h3>
+                    <p>  </p>
+                    <!-- <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                    </div> -->
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/nuevologo.png" alt="logo">
+                    <p class="footer-text">Fabricamos productos de calidad al mejor precio</p>
+                </div>
+                <div class="footer-col-3">
+                    <!-- <h3>Links</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Blog</li>
+                        <li>Politica de devoluciones</li>
+                        <li>Afiliarse</li>
+                    </ul> -->
+                </div>
+                <div class="footer-col-3">
+                    <h3>Siguenos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright - ProyectosIn 2020</p>
+        </div>
+    </div>
+
+    <!----------js toggle menu----------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script>    
+        document.getElementById("prod1").innerHTML = "$140000,00";
+        document.getElementById("prod2").innerHTML = "$140000,00";
+        document.getElementById("prod3").innerHTML = "$40000,00";
+        document.getElementById("prod4").innerHTML = "$40000,00";
+    </script>
 </body>
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos_In - Todos Nuestros Productos</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Acerca de Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Cuenta</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+        
+    </div>
+
+    <!-------------cart Items Details-------------------->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>red Printed t-shirt</p>
+                            <small>price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>200.00</td>
+                </tr>
+                <tr>
+                    <td>iva</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>220.00</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    
+    <!----------footer-------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descarga nuestra app</h3>
+                    <p>descargar app para android</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-black.png">
+                    <p>hacemos productos de calidad al mejor precio</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Blog</li>
+                        <li>Politica de devoluciones</li>
+                        <li>Afiliarse</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Siguenos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright - ProyectosIn 2020</p>
+        </div>
+    </div>
+
+    <!----------js toggle menu----------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+</body>
+</html>
